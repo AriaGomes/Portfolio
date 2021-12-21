@@ -58,9 +58,18 @@ You will find all the components used and you can edit your information accordin
 
 Give a ⭐ if you like this website!
 
+<<<<<<< HEAD
+=======
+<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+
+>>>>>>> d23142420799ab8671f234bf82bee3fedd15b32a
 ### Changes Made - AriaGomes
 1. Changed colour scheme to red & black/white
 2. Added own infromation to pages
 3. removed blogs as I dont want it
 4. Credit given to orginal creator
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d23142420799ab8671f234bf82bee3fedd15b32a
