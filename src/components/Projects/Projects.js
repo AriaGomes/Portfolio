@@ -3,7 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-// Imports of images
+// Imports of images here
+import afroguide from '../../Assets/Projects/afroguideTextless.png';
+import discordShell from '../../Assets/Projects/discordshell.png';
+import javachat from '../../Assets/Projects/javachat.png';
+import buffer from '../../Assets/Projects/Buffer.jpg';
+import scanner from '../../Assets/Projects/Scanner.gif';
+import parser from '../../Assets/Projects/Parser.gif';
 
 function Projects() {
   return (
@@ -14,67 +20,67 @@ function Projects() {
           My <strong className="red">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Some of the projects I have worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={afroguide}
+              isBlog={false}
+              title="Afroguide.ca"
+              description="Platform for users to easily discover hairstylists & barbers who cater to black hair. Users can book appointments and rate stylists. Stylists can use the platform to expose their skills to new users. The application uses ReactJS and Material UI for the front-end elements, NextJS and react-router-dom for routing pages, Google API with react-places-autocomplete for geolocation, autocomplete and location data."
+              link="http://Afroguide.ca"
+            />
+          </Col>
+        
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={}
+              imgPath={discordShell}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="DiscordShell"
+              description="Runs any Linux shell command inside of a Discord text channel.The Application uses node.js and discord.js to execute and connect with discord’s API. child_process is used to pipe commands to the shell and pipe the output back as a discord message. Was created in a couple hours. More features will be added later."
+              link="https://github.com/AriaGomes/FigroDiscordBot"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={}
+              imgPath={javachat}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Java Client-Server Chat"
+              description="Built from the ground up in Java Swing. A functional server and client application that can create a socket and send data back and fourth. The program also cleanly disconnects and destroys the socket so that nothing is left open on the users machine."
+              link="https://github.com/AriaGomes/Java-Applications-Programming/tree/master/ClientServerChat"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={}
+              imgPath={buffer}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Platypus Buffer"
+              description="Built from scratch in ANSI C, my buffer reserves memory cleanly and also frees memory cleanly aswell. The buffer can take an input file along with the mode. The mode determines how the memory will be managed to read the type of file. F being fixed sized of memory, M being multiplicative mode where memory capacity is multiplied when needed, and A for additive which adds on to the memory when needed. The buffer byitself is not very useful as it just takes data and reserves memory but doesnt do anything with the data. It was a good learning experience to understanding how compilers work."
+              link="https://github.com/AriaGomes/PerryThePlatypusBuffer"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={}
+              imgPath={scanner}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Platypus Scanner"
+              description="Using the Buffer, the Scanner takes the input from the buffer and reads the data witin it to decide what needs to be done next such as retract backwards or understand what type of error is on the line and what is the cause of it using the state table. The scanner makes our compiler useful in terms that something is being done with the input from the buffer although we cannot see our right and wrong lines."
+              link="https://github.com/AriaGomes/PerryThePlatypusScanner"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={}
+              imgPath={parser}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              // imgPath={}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Platypus Parser"
+              description="Built from scratch using the Buffer & Scanner projects. This Parser will detect grammar from the faux language PLATYPUS. It will read a input file and display each type of keyword or type of error and also run print lines from the file. This final piece bring the compiler together into a functional product. With all 3 projects this makes up a complete compiler for faux language PLATYPUS."
+              link="https://github.com/AriaGomes/PerryThePlatypusParser"
             />
           </Col>
         </Row>

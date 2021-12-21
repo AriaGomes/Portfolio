@@ -1,49 +1,111 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-} from "react-icons/di";
-import { SiPytorch, SiTensorflow, SiFirebase } from "react-icons/si";
+import { SiTensorflow, SiCsharp, SiC, SiCplusplus, SiPhp, SiDotNet, SiJavascript, SiNodeDotJs, SiCss3, SiHtml5, SiMongodb, SiReact, SiPython, SiGit, SiJava, SiMysql, SiPostgresql, SiDocker, SiBootstrap, SiMicrosoftazure  } from "react-icons/si";
+import ReactTooltip from "react-tooltip";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="c++">
+        <SiCplusplus />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <ReactTooltip id="c++" ><span>C++</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="js">
+        <SiJavascript />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      <ReactTooltip id="js"><span>JavaScript</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="python">
+        <SiPython />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <ReactTooltip id="python"><span>Python</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="html">
+        <SiHtml5 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <ReactTooltip id="html"><span>HTML5</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="css">
+        <SiCss3 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+      <ReactTooltip id="css"><span>CSS3</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="java">
+        <SiJava />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+      <ReactTooltip id="java"><span>Java</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="c#">
+        <SiCsharp />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <ReactTooltip id="c#"><span>C#</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="c">
+        <SiC />
+      </Col>
+      <ReactTooltip id="c"><span>C</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="php">
+        <SiPhp />
+      </Col>
+      <ReactTooltip id="php"><span>PHP</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for='dotnet'>
+        <SiDotNet />
+      </Col>
+      <ReactTooltip id="dotnet"><span>.NET Framwork & .Net Core</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="node">
+        <SiNodeDotJs />
+      </Col>
+      <ReactTooltip id="node"><span>Node.JS</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="react">
+        <SiReact />
+      </Col>
+      <ReactTooltip id="react"><span>React</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="tensor">
         <SiTensorflow />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <ReactTooltip id="tensor"><span>TensorFlow</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="bootstrap">
+        <SiBootstrap />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+      <ReactTooltip id="bootstrap"><span>Bootstrap CSS Framework</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="mysql">
+        <SiMysql />
       </Col>
+      <ReactTooltip id="mysql"><span>MySQL</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="postgresql">
+        <SiPostgresql />
+      </Col>
+      <ReactTooltip id="postgresql"><span>PostgreSQL</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="mongo">
+        <SiMongodb />
+      </Col>
+      <ReactTooltip id="mongo"><span>MongoDB/NoSQL</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="git">
+        <SiGit />
+      </Col>
+      <ReactTooltip id="git"><span>Git</span></ReactTooltip>
+
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="docker">
+        <SiDocker />
+      </Col>
+      <ReactTooltip id="docker"><span>Docker</span></ReactTooltip>
+      
+      <Col xs={4} md={2} className="tech-icons" data-tip data-for="azure">
+        <SiMicrosoftazure />
+      </Col>
+      <ReactTooltip id="azure"><span>Microsoft Azure Web Services</span></ReactTooltip>
+
     </Row>
   );
 }
