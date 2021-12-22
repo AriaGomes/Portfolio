@@ -21,7 +21,7 @@ function Home2() {
               <br />
               <br />Today, I am fluent in programming languages like
               <i>
-                <b className="red"> C, C++, C#, Java, HTML/CSS, PHP, Javascript, Python and MySQL/PostgreSQL. </b>
+                <b className="red"> C, C++, C#, Java, HTML/CSS, PHP, Javascript, Python and SQL. </b>
               </i>
               <br />
               <br />
@@ -32,7 +32,7 @@ function Home2() {
                  and also in areas related to{" "}
                  <i>
                 <b className="red">
-                  Deep Learning and Natural Launguage Processing.
+                  Deep Learning and Natural Language Processing.
                 </b>
               </i>
               <br />
