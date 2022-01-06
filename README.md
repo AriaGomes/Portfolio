@@ -1,6 +1,5 @@
 <h2 align="center">
   Fork of Portfolio Website - v2.0 by Soumyajit Behera<br/>
-  <a href="https://ariagomes.com" target="_blank">https://ariagomes.com</a>
 </h2>
 
 <br/>
