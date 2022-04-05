@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
+import Space from "../Space";
+// import Space from "../Space";
 import Home2 from "./Home2";
 import Type from "./Type";
+import ReactDOM from "react-dom";
+import { Html } from "@react-three/drei";
 
 function Home() {
   return (
@@ -26,9 +29,9 @@ function Home() {
                 <Type />
               </div>
             </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
+            
+            <Col md={5} >
+              <> <Space props/> </>
             </Col>
           </Row>
         </Container>

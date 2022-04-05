@@ -14,6 +14,10 @@ html {
   --imp-text-color: #e62838;
 }
 
+Canvas {
+  size: 100% 100%;
+}
+
 .red {
   color: var(--imp-text-color) !important;
 }
@@ -449,9 +453,9 @@ html {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: transparant !important;
 }
 
 .project-card {
@@ -512,7 +516,7 @@ html {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: transparent;
   color: white !important;
 }
 
@@ -573,7 +577,7 @@ html {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+
   color: white !important;
 }
 
