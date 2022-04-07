@@ -19,11 +19,11 @@ function Home() {
             <strong className="main-name"> Aria Gomes</strong>
           </h1>
         </div>
-        <div style={{ padding: 50, textAlign: "center" }}>
+        <div style={{ padding: 25, textAlign: "center" }}>
           <Type />
         </div>
       </div>
-      <div style={{ position: "relative", textAlign: "center", top: '-250px', height: '100vh' }}>
+      <div style={{ position: "relative", top: '-20vh', height: '100vh' }}>
         <Space linear shadows />
       </div>
       <div style={{ position: "relative", bottom: "100px" }}>
