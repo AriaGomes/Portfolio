@@ -24,7 +24,6 @@ export default function Space(props) {
 		<>
 			<Canvas
 				{...props}
-				style={{ backgroundColor: 'transparent' }}
 			>
 				<fog attach="fog" args={['#272730', 30, 58]} />
 				<ambientLight intensity={1} />
