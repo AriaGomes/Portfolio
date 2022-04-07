@@ -25,7 +25,7 @@ function Home() {
       </div>
       
 
-      <div style={{ paddingBottom: 25, height: '100vh', position: 'relative', top:'-150px'}}>
+      <div style={{ paddingBottom: 25, height: '100%', position: 'relative', top:'-250px'}}>
         
         <Space linear shadows />
       </div>
