@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <Particle />
-      <div style={{ position: "absolute", top: 100, textAlign: "center", paddingBottom: '300px', width: '100vw' }}>
+      <div style={{ position: "absolute", top: 100, textAlign: "center", paddingBottom: '300px', width: '100%' }}>
         <div>
           <h1 style={{ color: "white" }} >
             Welcome ! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
@@ -21,13 +21,13 @@ function Home() {
         </div>
 
 
-        <div style={{ position: 'absolute', width: '100vw' }}>
+        <div style={{ position: 'absolute', width: '100%' }}>
           <Type />
         </div>
       </div>
 
 
-      <div style={{ height: '1500px', paddingTop: '0px' }}>
+      <div style={{ height: '1500px', transform: 'translateY(-170px)'}}>
 
         <Space linear shadows />
       </div>
