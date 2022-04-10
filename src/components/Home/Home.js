@@ -27,11 +27,11 @@ function Home() {
       </div>
 
 
-      <div style={{ height: '1500px', transform: 'translateY(-170px)'}}>
+      <div style={{ height: '1000px'}}>
 
         <Space linear shadows />
       </div>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", paddingTop: '200px' }}>
         <Home2 />
       </div>
     </>
