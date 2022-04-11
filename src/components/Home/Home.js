@@ -61,7 +61,7 @@ export default Home;
 
 function handleScroll() {
   window.scroll({
-    top: document.body.offsetHeight,
+    top: document.body.offsetHeight - 1500,
     left: 0, 
     behavior: 'smooth',
   });
