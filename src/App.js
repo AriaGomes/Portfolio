@@ -6,11 +6,12 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/ResumeNew";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Playground from "./components/Playground/Playground";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import PageNotFound from './components/PageNotFound/PageNotFound';
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
           <Route path="/project" component={Projects} />
           <Route path="/about" component={About} />
           <Route path="/resume" component={Resume} />
+          <Route path="/playground" component={Playground} />
+          <Route path ='/404'component={PageNotFound} />
+          <Redirect to="/404" />
         </Switch>
       </div>
         <Footer />

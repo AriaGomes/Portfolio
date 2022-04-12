@@ -15,7 +15,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
            
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "2.6em" }} id="mobile-scroll">
               Who  am<span className="red"> I </span> 
             </h1>
             <p className="home-about-body">

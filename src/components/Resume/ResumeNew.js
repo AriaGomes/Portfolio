@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
@@ -12,12 +12,6 @@ const resumeLink =
   "https://raw.githubusercontent.com/AriaGomes/portfolio/master/src/Assets/AriaGomes-Resume.pdf";
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
   return (
     <><div>
       <Particle />
@@ -32,8 +26,8 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document file={resumeLink}>
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={1} scale={window.innerWidth > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={2} scale={window.innerWidth > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
 

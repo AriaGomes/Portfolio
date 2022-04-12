@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import { Button } from "react-bootstrap";
 import Particle from "../Particle";
 import Space from "../Space";
 import Home2 from "./Home2";
@@ -29,10 +28,10 @@ function Home() {
         <div style={{ position: 'absolute', width: '100%' }}>
           <Type />
         </div>
-        <div style={{right: '20vw', position: 'absolute', zIndex: '10000', top: '300px'}}>
-        <Button onClick={handleScroll} style={{ borderRadius: '50px', height: '50px', width: '50px'}} >
-          <AiFillCaretDown style={{ color: 'white' }}  fontSize={'1.1em'} />
-        </Button>
+        <div style={{right: '20vw', position: 'absolute', zIndex: '100', top: '300px'}} className="mobileshow">
+        <a href='#mobile-scroll' className="mobileshowicon" >
+          <AiFillCaretDown style={{ color: 'white' }}  fontSize={'1.1em'} className='icon-colour  home-social-icons'/>
+        </a>
       </div>
 
       </div>
@@ -57,12 +56,3 @@ function Home() {
 }
 
 export default Home;
-
-
-function handleScroll() {
-  window.scroll({
-    top: document.body.offsetHeight - 1500,
-    left: 0, 
-    behavior: 'smooth',
-  });
-}
