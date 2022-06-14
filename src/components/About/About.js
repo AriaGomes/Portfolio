@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import WordCloud from "../WordCloud";
+import { AiFillCaretDown } from "react-icons/ai";
 
 function About() {
   return (
@@ -29,21 +30,30 @@ function About() {
           md={5}
           style={{ paddingTop: "120px", paddingBottom: "50px" }}
           className="about-img"
-        >
+        >       
+
+        <div style={{right: '5vw', position: 'absolute', zIndex: '100', top: '30px'}} className="mobileshow">
+        <a href='#mobile-scroll' className="mobileshowicon" >
+          <AiFillCaretDown style={{ color: 'white' }}  fontSize={'1.1em'} className='icon-colour  home-social-icons'/>
+        </a>
+      </div>
+
+          <div style={{ height: "500px" }}>
           <Suspense fallback={<h1 style={{ color: "white" }}>Loading...</h1>}>
-        <WordCloud />
+        <WordCloud/>
         </Suspense>
+        </div>
         </Col>
         
       </Row>
       <h1 className="project-heading">
-        Professional <strong className="red">skillset </strong>
+        <p id="mobile-scroll">Professional <strong className="red">skillset </strong></p>
       </h1>
 
       <Techstack />
 
       <h1 className="project-heading">
-        <strong className="red">Tehcnologies & tools</strong> I use
+        <strong class="red">Tehcnologies & tools</strong> I use
       </h1>
       <Toolstack />
 

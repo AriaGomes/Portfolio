@@ -88,7 +88,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/playground"
@@ -96,7 +96,7 @@ function NavBar() {
               >
                 <FaHammer style={{ marginBottom: "2px" }}/> Playground 
                 </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
 
             <Nav.Item className="fork-btn">
