@@ -1,16 +1,18 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
+import ReactTooltip from 'react-tooltip';
 
 function Github() {
   const colourTheme = {
     background: "transparent",
     text: "#ffffff",
-    grade4: "#cd5c5c",
-    grade3: "#960018",
-    grade2: "#a45a52",
-    grade1: "#ea3c53",
-    grade0: "#000000",
+    level4: "#960018",
+    level3: "#ea3c53",
+    level2: "#cd5c5c",
+    level1: "#a45a52",
+    level0: "#000000",
+    tooltip: "<strong>{{count}} contributions</strong> on {{date}}" 
   };
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -23,7 +25,10 @@ function Github() {
         blockMargin={5}
         theme={colourTheme}
         fontSize={16}
-      />
+      >
+      <ReactTooltip html />
+      </GitHubCalendar>
+      
     </Row>
   );
 }
