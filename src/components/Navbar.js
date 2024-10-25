@@ -77,7 +77,7 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
+            <Button href={pdf} target="_blank">
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -87,6 +87,7 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
+            </Button>
 
             {/* <Nav.Item>
               <Nav.Link
