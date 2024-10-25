@@ -82,7 +82,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 onClick={() => {
-                  updateExpanded(false)
+                  updateExpanded(false);
                   window.location.href = pdf;
                 }}
               >
