@@ -12,7 +12,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import pdf from "../../Assets/AriaGomes-Resume.pdf";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
