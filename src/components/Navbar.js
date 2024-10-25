@@ -12,7 +12,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import pdf from "../Assets/AriaGomes-Resume.pdf";
+
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -77,17 +77,18 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-            <a href={pdf} target="_blank">
+
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to={pdf}
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false)
+                  window.location.href = pdf;
+                }}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-            </a>
 
             {/* <Nav.Item>
               <Nav.Link
