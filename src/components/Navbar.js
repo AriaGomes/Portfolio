@@ -83,7 +83,7 @@ function NavBar() {
                 as={Link}
                 onClick={() => {
                   updateExpanded(false);
-                  window.location.href = pdf;
+                  window.open(pdf, "_blank");
                 }}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
