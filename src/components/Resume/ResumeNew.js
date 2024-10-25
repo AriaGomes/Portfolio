@@ -15,7 +15,7 @@ function ResumeNew() {
   return (
     <><div>
       <Particle />
-      <Container fluid className="resume-section">
+      <Container className="resume-section">
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
@@ -27,6 +27,8 @@ function ResumeNew() {
         <Row className="resume">
           <Document file={resumeLink}>
             <Page pageNumber={1} scale={window.innerWidth > 786 ? 1.7 : 0.6} />
+            </Document>
+            <Document file={resumeLink}>
             <Page pageNumber={2} scale={window.innerWidth > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
