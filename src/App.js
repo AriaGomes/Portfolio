@@ -35,7 +35,6 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/project" component={Projects} />
           <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
           <Route path="/playground" component={Playground} />
           <Route path ='/404'component={PageNotFound} />
           <Redirect to="/404" />
